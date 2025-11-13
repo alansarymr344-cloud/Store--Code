@@ -1,0 +1,153 @@
+/* start header */
+html,
+body {
+  overflow-x: hidden;
+  width: 100%;
+}
+.bg {
+  background-color: rgb(233, 23, 149);
+  color: white;
+  text-align: center;
+  padding: 5px 0;
+}
+
+.navbar-brand {
+  font-weight: bold;
+  border: 2px solid rgb(233, 23, 149);
+  padding: 5px 20px;
+  margin: 0 100px 0 100px;
+}
+.navbar-nav a {
+  margin-left: 100px;
+  transition: all 0.8s ease;
+}
+.navbar-nav a:hover {
+  transform: 0.3s ease;
+  color: rgb(233, 23, 149);
+  border: 2px solid rgb(233, 23, 149);
+  border-radius: 20%;
+}
+/* end header */
+/* start Home */
+.badge-custom-pink {
+  background-color: rgb(233, 23, 149);
+  color: white;
+}
+
+.btn-pink-custom {
+  background-color: rgb(233, 23, 149);
+  border-color: rgb(233, 23, 149);
+  color: #fff;
+  font-weight: 500;
+}
+
+.btn-pink-custom:hover,
+.btn-pink-custom:focus {
+  background-color: #fff;
+  color: rgb(233, 23, 149);
+  border-color: rgb(233, 23, 149);
+  box-shadow: none;
+}
+
+.Home {
+  background-color: #fffaec;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+.hero-text-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+.hero-img {
+  width: 100%;
+  height: auto;
+}
+
+.Home {
+  background-color: #fff9e6;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.Home p,
+.Home h2 {
+  color: #212529;
+}
+
+.hero-text-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero-img {
+  width: 100%;
+  height: 450px;
+  object-fit: contain;
+  display: block;
+}
+
+span {
+  color: rgb(233, 23, 149);
+}
+/* end Home */
+/* start New Arrivals */
+.New {
+  font-size: 46px;
+}
+
+section .card {
+  border: none;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+}
+section .card-img-top {
+  transition: transform 0.3s ease;
+}
+section .card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+section .card:hover .card-img-top {
+  transform: scale(1.1);
+}
+/* end New Arrivals */
+/* start Shop By Categories */
+.img-fluid {
+  margin-top: 50px;
+  transition: all 0.3s ease-in-out;
+
+  border-radius: 8px;
+}
+
+.img-fluid:hover {
+  transform: scale(1.05);
+
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
+
+  position: relative;
+  z-index: 10;
+}
+/* end Shop By Categories */
+/* start Popular Products */
+.cont .card {
+  transition: transform 0.3s ease;
+  z-index: 1;
+}
+
+.cont .card img {
+  transition: filter 0.3s ease;
+}
+
+.cont .card:hover {
+  transform: scale(1.05);
+  z-index: 10;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.cont .row:has(.card:hover) .card:not(:hover) img {
+  filter: blur(8px);
+}
+/* end Popular Products */
